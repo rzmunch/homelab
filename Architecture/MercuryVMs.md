@@ -1,10 +1,7 @@
 # VMs in the Mercury Node
 
-##  Terraform Host: IaC
+##  Terraform & Ansible Host: IaC
 2 GB 2 core
-
-##  Ansible Host: Config Management
-1G 1 core
 
 ## Unprivileged LXC - Docker
 4 GB 4 cores
