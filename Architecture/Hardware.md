@@ -11,7 +11,23 @@
 
 **SATA**: free slot (up to 2TB)
 
-M2 **2230** (keyed to support Integrated or Discrete WiFi) : Free
+**M2 2230** (keyed to support Integrated or Discrete WiFi) : Free
 
 ### Software
 **Proxmox Virtual Environment**: Proxmox VE 8.0: https://www.proxmox.com/en/downloads
+
+## Venus - Possible future
+**Model**: Lenovo M920q Tini (USFF)
+
+**Memory**: 
+
+**CPU**: 
+
+**SSD**: 
+
+**SATA**: 
+
+**M2 2230** 
+
+### Software
+**VMware ESXI**: 
