@@ -1,8 +1,5 @@
 # VMs in the Mercury Node
 
-##  Terraform & Ansible Host: IaC
-2 GB 2 core
-
 ## Unprivileged LXC - Docker
 4 GB 4 cores
 
@@ -11,6 +8,8 @@ Dockerfile using your based favorite Linux distro, have the dockerfile install p
 
 ### Terraform Container
 Dockerfile using your based favorite Linux distro, have the dockerfile install python3+pip, then install ansible via pip. Then use your image for executing playbooks and so on.
+
+### Blog
 
 ## Harbor: Image Registry
 

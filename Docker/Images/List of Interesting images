@@ -1,0 +1,46 @@
+#From https://blog.chse.dev/server/
+    apache2 - Reverse Proxy (Planning on moving to Nginx Proxy Manager soon.)
+    **Homepage - A Simple Dashboard to keep everything organized. Complete with Docker Integration so I can see what services are up/down.**
+    **Nextcloud - Google Drive Replacement (w/ Photos Backup)**
+    **Vaultwarden (Bitwarden) - Password Manager**
+    BookStack - Documentation Platform
+    **Ghost - Simple Blogging Platform**
+    Gitea - Git Platform (+act_runner, +renovate)
+    FreshRSS - RSS Aggregator
+    PrivateBin - Encrypted PasteBin
+    Gokapi - Firefox Send Alternative (Admin Upload only)
+    Filebrowser - A Simple Web File Browser
+    Teamspeak Server - VOIP Service
+    **Portainer - Web UI for managing Docker Containers**
+    Scrutiny - SMART Scans for Drives
+   **Healthchecks - Cron Job Monitoring (Sends notifications to ntfy when cron jobs fail)**
+    **ntfy - Sends custom push notifications to devices**
+    **Speedtest Tracker - Daily Speedtests with Graphs**
+    phpMyAdmin - SQL Database Viewer
+    **Wireguard (wg-easy) - WireGuard VPN + Web Admin UI**
+    **Uptime Kuma - Services Monitor**
+    **Sonarr - Automatically "acquire" TV Shows**
+    **Radarr - ^ for Movies**
+    **Readarr - ^ for Books**
+    **Bazarr - ^ for Subtitles**
+    **subcleaner - Cleans subtitles downloaded from Bazarr**
+    **Prowlarr - Indexers for Sonarr/Radarr/Readarr**
+    qBittorrent (w/ VPN) - My Torrent Client of choice
+    **pyLoad - File Downloader**
+    Tautulli - Plex Statistics
+    Overseerr - Requests for Plex
+    Requestrr - Requests for Plex through a Discord Bot
+    OpenBooks - Download books from IRC Highway
+    Wizarr - Invite System for Plex
+    Umami - Website Analytics
+    **CyberChef - Web App for "computer science" things**
+    **IT-Tools - Collection of handy online tools for developers.**
+    **Stirling-PDF - Web Application that allows you to perform various operations on PDF files**
+    Image-Uploader - A simple web UI to upload/host images. (Disclaimer: I wrote this)
+    **Apache Guacamole - Remote SSH/RDP Client**
+    shields.io - shields.io instance for private Git repo badges
+    Plex Auto Languages - Auto-Updating the subtitle language across an entire show
+    **Watchtower - Automatically keeps Docker Containers up to date**
+    MySQL - My database of choice
+    Plex - Stream Content from my Home Server with a Netflix-like UI
+    Plex-Meta-Manager - Automated Creation of Plex Collections
