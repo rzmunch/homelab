@@ -1,3 +1,6 @@
 [submodule "Docker/hugo/test/themes/hugo-theme-stack"]
 	path = Docker/hugo/test/themes/hugo-theme-stack
 	url = https://github.com/CaiJimmy/hugo-theme-stack/
+[submodule "Docker/hugo/test/themes/themes/hugo-theme-stack"]
+	path = Docker/hugo/test/themes/themes/hugo-theme-stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack/
