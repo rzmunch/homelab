@@ -1,0 +1,47 @@
+#Pull hugo image
+docker pull hugomods/hugo
+
+#Execute inside container
+docker run -it --rm -v $(pwd):/src hugomods/hugo /bin/sh
+
+#Create site
+docker run --rm -v $(pwd):/src hugomods/hugo hugo new site test --format yaml
+
+#Go to site root directory
+cd test
+
+#Update Hugo Stack theme
+
+#docker run --rm -v $(pwd):/src hugomods/hugo hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
+#docker run --rm -v $(pwd):/src hugomods/hugo hugo mod get hugo mod tidy
+#We add as a submodule
+git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+
+#Hugo reqs - mounting current working directory as site source inside Docker container.
+docker run -v ${PWD}:/src hugomods/hugo npm i
+
+#Start Hugo server
+docker run -p 1313:1313 -v ${PWD}:/src hugomods/hugo hugo server --bind 0.0.0.0
+#Start Hugo server in other port
+docker run -p 8080:8080 -v ${PWD}:/src hugomods/hugo hugo server --bind 0.0.0.0 -p 8080
+
+#Test Build -t specifies the image name and tag. 
+#Test Build --build-arg HUGO_BASEURL=http://localhost:8080 overrides the baseURL
+docker build -t user/my-site:test --build-arg HUGO_BASEURL=http://localhost:8080 .
+docker run -p 8080:80 user/my-site:test
+
+#Build Prod
+docker build -t user/my-site .
+
+
+#Create site: A new folder 'test' will be created, which contains the generated site. 
+#The -v flag is used to create a volume from the present working directory (pwd). The --format yaml at the end enables yaml config files instead of toml.
+docker run --rm -v $(pwd):/src hugomods/hugo hugo new site test --format yaml
+
+#Update Hugo Stack theme
+
+docker run --rm -v $(pwd):/src hugomods/hugo hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
+docker run --rm -v $(pwd):/src hugomods/hugo hugo mod get hugo mod tidy
+
+#Serve site
+docker run --rm -p 1313:1313 -v $(pwd):/src hugomods/hugo server
