@@ -16,9 +16,16 @@ cd test
 #docker run --rm -v $(pwd):/src hugomods/hugo hugo mod get hugo mod tidy
 #We add as a submodule
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+vi 
+
+#Add the theme
+echo "theme: 'hugo-theme-stack'" >> hugo.yaml
 
 #Hugo reqs - mounting current working directory as site source inside Docker container.
 docker run -v ${PWD}:/src hugomods/hugo npm i
+
+#Add content
+docker run --rm -v $(pwd):/src hugomods/hugo hugo new content posts/installing-hugo-static-framework.md
 
 #Start Hugo server
 docker run -p 1313:1313 -v ${PWD}:/src hugomods/hugo hugo server --bind 0.0.0.0
